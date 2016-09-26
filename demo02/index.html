@@ -8,16 +8,16 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
-      var names = ['Alice', 'Emily', 'Kate'];
+      var names = ['Alice', 'Emily', 'Kate', 'Zhang Lemon'];
 
       ReactDOM.render(
-        <div>
+        <ul>
         {
           names.map(function (name) {
-            return <div>Hello, {name}!</div>
+            return <li>Hello, {name}!</li>
           })
         }
-        </div>,
+        </ul>,
         document.getElementById('example')
       );
     </script>
